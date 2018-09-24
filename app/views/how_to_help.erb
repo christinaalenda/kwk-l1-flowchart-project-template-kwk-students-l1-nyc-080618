@@ -3,8 +3,6 @@
   <p><input type="submit"></p>
 </form>
 
-Folder:views 
-File: result.reb
 <% if (@zipcode == "10026" || @zipcode == "10027" || @zipcode =="10030" ||@zipcode == "10037" || @zipcode == "10039") %>
   <% neighborhood = "central harlem" %>
 
@@ -28,7 +26,7 @@ File: result.reb
 
 <% links = @locations[neighborhood] %>
 
-<h1>Food: </h1><a href='<%= links[0] %>'>Food</a>
-<h1>Time: </h1><a href='<%= links[1] %>'>Time</a>
-<h1>Donations: </h1><a href='<%= links[2] %>'>Donations</a>
+<h2>Food: </h2><a href='<%= links[0] %>'>Food</a>
+<h2>Time: </h2><a href='<%= links[1] %>'>Time</a>
+<h2>Donations: </h2><a href='<%= links[2] %>'>Donations</a>
 
